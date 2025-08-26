@@ -1,4 +1,8 @@
 import GlowBall from "@/components/shared/GlowBall";
+import IconJs from "@/components/shared/IconJs";
+import IconReact from "@/components/shared/IconReact";
+import IconsNext from "@/components/shared/IconsNext";
+import IconTalwind from "@/components/shared/IconTalwind";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -26,10 +30,31 @@ export default function Hero() {
           <GlowBall color="w-[800px] h-[800px] bg-red-500 opacity-10 rounded-full blur-3xl absolute top-50 z-[1]" />
           <Image
             className="rounded-full shadow-md my-20 relative z-50 object-cover"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="hero"
             src="/images/shovon.jpg"
+          />
+          <div className="absolute top-16 left-5 w-10 h-10 blur-[3px]">
+            <IconJs />
+          </div>
+          <div className="absolute top-10 right-5 w-10 h-10 blur-[3px]">
+            <IconReact />
+          </div>
+          <div className="absolute bottom-10 left-5 w-10 h-10 blur-[3px]">
+            <IconTalwind />
+          </div>
+          <div className="absolute bottom-16 right-5 w-10 h-10 blur-[3px]">
+            <IconsNext />
+          </div>
+        </div>
+        <div className="absolute blur-md opacity-80">
+          <Image
+            alt="line3"
+            width={1000}
+            height={200}
+            className="w-full"
+            src="/images/line3.png"
           />
         </div>
       </div>
