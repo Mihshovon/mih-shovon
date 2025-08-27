@@ -1,3 +1,5 @@
+import * as motion from "motion/react-client";
+
 import GlowBall from "@/components/shared/GlowBall";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
@@ -10,9 +12,17 @@ export default function Experience() {
         <div className="felx flex-col justify-center items-center">
           <Card className="bg-white px-12 py-28 flex flex-col justify-center items-center">
             <CardContent>
-              <h2 className="text-8xl font-bold text-cyan-500 text-center">
-                05
-              </h2>
+              <motion.div
+                animate={{
+                  
+                  rotate: [0, 0, 270, 360, 80, 0, 0],
+                }}
+                transition={{ duration: 3 }}
+              >
+                <h2 className="text-8xl font-bold text-cyan-500 text-center">
+                  05
+                </h2>
+              </motion.div>
               <p className="text-2xl">Years of Experience</p>
             </CardContent>
           </Card>
@@ -23,7 +33,6 @@ export default function Experience() {
             </CardContent>
           </Card>
         </div>
-
         <div className="p-20 max-w-2xl">
           <div className="flex flex-col gap-4 mb-4">
             <h3 className="text-5xl font-bold bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent">
@@ -37,12 +46,14 @@ export default function Experience() {
             </p>
           </div>
           <div className="grid grid-cols-3 gap-4">
-            <Card className="border-[1px] shadow-xs bg-white">
-              <CardContent className="flex flex-col justify-center items-center">
-                <h2 className="text-4xl text-black font-semibold">90%</h2>
-                <p className="text-sm text-amber-500">JavaScript</p>
-              </CardContent>
-            </Card>
+            <motion.div whileHover={{ scale: 1.8 }}>
+              <Card className="border-[1px] shadow-xs bg-white">
+                <CardContent className="flex flex-col justify-center items-center">
+                  <h2 className="text-4xl text-black font-semibold">90%</h2>
+                  <p className="text-sm text-amber-500">JavaScript</p>
+                </CardContent>
+              </Card>
+            </motion.div>
             <Card>
               <CardContent className="flex flex-col justify-center items-center">
                 <h2 className="text-4xl text-black font-semibold">90%</h2>
@@ -67,12 +78,15 @@ export default function Experience() {
                 <p>JavaScript</p>
               </CardContent>
             </Card>
-            <Card>
-              <CardContent className="flex flex-col justify-center items-center">
-                <h2 className="text-4xl text-black font-semibold">90%</h2>
-                <p>JavaScript</p>
-              </CardContent>
-            </Card>
+
+            <motion.div whileHover={{ scale: 1.5 }}>
+              <Card>
+                <CardContent className="flex flex-col justify-center items-center">
+                  <h2 className="text-4xl text-black font-semibold">90%</h2>
+                  <p>JavaScriptxxx</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
           <div>
             <Image

@@ -1,3 +1,4 @@
+import Reveal from "@/components/anim/Reveal";
 import GlowBall from "@/components/shared/GlowBall";
 import IconJs from "@/components/shared/IconJs";
 import IconReact from "@/components/shared/IconReact";
@@ -9,7 +10,8 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="h-screen bg-gradient-to-r from-emerald-50 to-teal-50 relative">
-      <GlowBall color="w-[800px] h-[800px] bg-cyan-500 opacity-10 rounded-full blur-3xl absolute z-[1] top-0 left-0" />
+      <Reveal>
+        <GlowBall color="w-[800px] h-[800px] bg-cyan-500 opacity-10 rounded-full blur-3xl absolute z-[1] top-0 left-0" />
       <div className="max-w-7xl m-auto flex justify-between items-center">
         <div className="max-w-2xl flex flex-col gap-6 relative z-50">
           <h1 className="text-4xl font-bold">
@@ -58,6 +60,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      </Reveal>
     </section>
   );
 }
