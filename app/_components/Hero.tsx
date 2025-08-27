@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="h-screen bg-gradient-to-r from-emerald-50 to-teal-50 relative">
       <GlowBall color="w-[800px] h-[800px] bg-cyan-500 opacity-10 rounded-full blur-3xl absolute z-[1] top-0 left-0" />
       <div className="max-w-7xl m-auto flex justify-between items-center">
-        <div className="max-w-2xl flex flex-col gap-6 relative">
+        <div className="max-w-2xl flex flex-col gap-6 relative z-50">
           <h1 className="text-4xl font-bold">
             Hi<span>,</span>
           </h1>
