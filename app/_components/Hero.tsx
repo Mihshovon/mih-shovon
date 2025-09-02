@@ -19,6 +19,7 @@ export default function Hero() {
           </h1>
           <h2 className="text-3xl font-semibold bg-gradient-to-r from-green-500 via-violet-500 to-red-600 bg-clip-text text-transparent">{`I'm Iqbal Hossain`}</h2>
           <h3 className="font-bold text-6xl">Softwer Developer</h3>
+          <h3 className="font-bold text-6xl">Softwer Developer</h3>
           <p className="text-md">
             {`I'm a Full-Stack developer, I have 5+ years of experience in website & mobile app.
              I build website using modran technology - next.js/talwind.css/express.js`}
